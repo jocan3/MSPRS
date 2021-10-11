@@ -30,3 +30,6 @@ Metrics (telemetry) is not included in this version. The `/public/scripts/index.
 
 Error handling and logging for debbuging is not included in this version. The file `Server.ts` contins logic to handle API requests errors in case of failure.
 
+## Demo
+
+[Watch video](https://microsoft-my.sharepoint.com/:v:/p/jmenaarias/ESECU1dizmdLiksMxSoTMegBrb0pf3IRsTYB8doWp8LH2w?e=x3FGFq)
