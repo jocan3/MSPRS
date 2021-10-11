@@ -35,6 +35,12 @@ body .pr-column .pr-display-ele .pr-card p {
   font-size: small;
 }
 
+body .pr-column .pr-display-ele .pr-card .comments-section p {
+  color: rgb(228, 222, 222);
+  font-size: medium;
+  bottom: 1em;
+}
+
 fast-badge {
   --badge-fill-danger: #b85e06;
   --badge-color-white: #ffffff;

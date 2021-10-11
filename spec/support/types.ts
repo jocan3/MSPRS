@@ -1,14 +1,13 @@
+import { IPullRequest } from '@daos/PullRequest/PullRequestDao';
 import { Response } from 'supertest';
-import { IUser } from '@entities/User';
-
 
 export interface IResponse extends Response {
     body: {
-        users: IUser[];
+        prs: IPullRequest[];
         error: string;
     };
 }
 
 export interface IReqBody {
-    user?: IUser;
+    pr?: IPullRequest;
 }

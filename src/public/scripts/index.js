@@ -50,8 +50,8 @@ function getPRDisplayEle(pr) {
                 <h3>${pr.title}</h3>
                 <p> ${pr.description} </p>
                 ${getReviewerTag(pr.assignedToMe)}
-                <div>
-                    <p><i class="ms-Icon ms-Icon--ActivityFeed" aria-hidden="true"></i>${pr.numComments}</p>
+                <div class="comments-section">
+                    <p><i class="ms-Icon ms-Icon--ActivityFeed" aria-hidden="true"></i> ${pr.numComments}</p>
                 <div>
             </fast-card>
         </div>
