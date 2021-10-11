@@ -4,8 +4,6 @@ import Jasmine from 'jasmine';
 import commandLineArgs from 'command-line-args';
 import logger from '@shared/Logger';
 
-
-
 // Setup command line options
 const options = commandLineArgs([
     {

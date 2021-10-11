@@ -3,7 +3,7 @@
  ******************************************************************************/
 
  displayPullRequests();
-
+ // log metric when page is loaded
 
 function displayPullRequests() {
     httpGet('/api/prs/all')
@@ -67,9 +67,11 @@ document.addEventListener('click', function (event) {
     event.preventDefault();
     var ele = event.target;
     if (ele.matches('#filter-my-prs-btn')) {
+         // log metric when filter my PRs
         displayMyPullRequests();
     }
     if (ele.matches('#filter-all-prs-btn')) {
+         // log metric when clicked to show all the PRs
         displayPullRequests();
     }
 }, false)
