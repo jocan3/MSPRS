@@ -2,32 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>ExpressGeneratorTypeScriptApp</title>
+        <title>Pull Requests: Web Components</title>
         <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+            <!-- Icons to support Material Design -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script type="module" src="https://unpkg.com/@microsoft/fast-components"></script>
     </head>
     <body>
-
-        <!-- Add Users -->
-        <div class="users-column add-user-col">
-            <div class="column-header">Add User:</div>
-            <div>
-                <input id="name-input" placeholder="Name">
+        <!-- Display Prs -->
+        <div>
+            <div class="column-header">Pull Requests:</div>
+            <div class="filters">
+                <fast-button id="filter-all-prs-btn" appearance="lightweight">Active</fast-button>
+                <fast-button id="filter-my-prs-btn" appearance="lightweight">Mine</fast-button>
             </div>
-            <div>
-                <input id="email-input" placeholder="Email">
-            </div>
-            <div>
-                <button id="add-user-btn">Add</button>
-            </div>
+            <div id="all-prs-anchor"></div>
         </div>
-
-        <!-- Display Users -->
-        <div class="users-column">
-            <div class="column-header">Users:</div>
-            <div id="all-users-anchor"></div>
-        </div>
-
-
 
     </body>
     <script src="scripts/index.js"></script>

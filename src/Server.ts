@@ -9,6 +9,7 @@ import 'express-async-errors';
 
 import BaseRouter from './routes';
 import logger from '@shared/Logger';
+import { fastBadge, fastButton, fastCard, provideFASTDesignSystem } from '@microsoft/fast-components';
 
 const app = express();
 const { BAD_REQUEST } = StatusCodes;
@@ -58,6 +59,15 @@ app.use(express.static(staticDir));
 app.get('*', (req: Request, res: Response) => {
     res.sendFile('index.html', {root: viewsDir});
 });
+
+/*
+provideFASTDesignSystem()
+.register(
+    fastCard(),
+    fastButton(),
+    fastBadge()
+)*/
+
 
 // Export express instance
 export default app;

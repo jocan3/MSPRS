@@ -1,33 +1,41 @@
 body {
-  padding: 100px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Segoe UI, Segoe UI Midlevel, Segoe WP, Arial, sans-serif
 }
 
-body .users-column {
+body .pr-column {
   display: inline-block;
-  margin-right: 2em;
+  margin-right: 1em;
   vertical-align: top;
 }
 
-body .users-column .column-header {
-  padding-bottom: 5px;
+body .column-header {
+  padding-bottom: 1em;
   font-weight: 700;
   font-size: 1.2em;
 }
 
-body .add-user-col input {
-  margin-bottom: 10px;
+body .pr-column .pr-display-ele {
+  padding-bottom: 1em;
+  width: 15em;
+  height: 20em;
 }
 
-body .users-column .user-display-ele {
-  padding-bottom: 10px;
+body .pr-column .pr-display-ele .pr-card {
+  padding: 1em;
 }
 
-body .users-column .user-display-ele button {
-  margin-top: 2px;
-  margin-bottom: 10px;
+body .pr-column .pr-display-ele .pr-card h3 {
+  color: white;
+  font-size: medium;
+  text-overflow:ellipsis;
 }
 
-body .users-column .user-display-ele .edit-view {
-  display: none;
+body .pr-column .pr-display-ele .pr-card p {
+  color: rgb(133, 131, 131);
+  font-size: small;
+}
+
+fast-badge {
+  --badge-fill-danger: #b85e06;
+  --badge-color-white: #ffffff;
 }
